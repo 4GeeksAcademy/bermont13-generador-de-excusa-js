@@ -6,25 +6,22 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  let who = ["The dog", "My grandma", "The mailman", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "my phone", "the car"];
-  let when = [
-    "before the class",
-    "when I was sleeping",
-    "while I was exercising",
-    "during my lunch",
-    "while I was praying"
+  const sujetos = ["El Perro", "Mi abuela", "El cartero", "Mi pajaro"];
+  const acciones = ["comio", "orino", "desptrozo", "rompio"];
+  const objetos = ["mi tarea", "mi telefono", "El carro"];
+  const momentos = [
+    "antes de clases",
+    "cuando estaba durmiendo",
+    "mientras hacia ejercicio",
+    "durante mi almuerzo",
+    "mientras estaba rezando"
   ];
-
-  let sujeto = who[Math.floor(Math.random() * who.length)];
-  let accion = action[Math.floor(Math.random() * action.length)];
-  let objeto = what[Math.floor(Math.random() * what.length)];
-  let momento = when[Math.floor(Math.random() * when.length)];
+  let sujeto = sujetos[Math.floor(Math.random() * sujetos.length)];
+  let accion = acciones[Math.floor(Math.random() * acciones.length)];
+  let objeto = objetos[Math.floor(Math.random() * objetos.length)];
+  let momento = momentos[Math.floor(Math.random() * momentos.length)];
   let excusa = document.getElementById("excuse");
-
   // let excusa = sujeto + accion + objeto + momento;
-
   //write your code here
   console.log("Hello Rigo from the console!");
   console.log(excusa);
